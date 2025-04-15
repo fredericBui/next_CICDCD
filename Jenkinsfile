@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Continuous Integration / Intégration Continue") {
             steps {
-                git branch: "main", url: "https://github.com/fredericBui/html_CICDCD.git"
+                git branch: "main", url: "https://github.com/katekate7/next_CICDCD.git"
             }
         }
         stage("Continuous Delivery / Livraison Continue") {
