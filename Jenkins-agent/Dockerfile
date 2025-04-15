@@ -17,6 +17,5 @@ RUN node -v && npm -v
 RUN npm install -g next
 RUN curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 RUN sh get-docker.sh
-USER jenkins
 WORKDIR /home/jenkins/agent
 
