@@ -9,7 +9,6 @@ pipeline {
                 git branch: "main", url: "https://github.com/katekate7/next_CICDCD.git"
                 sh 'npm install'
                 sh 'npm run build'
-                sh 'npm install --save-dev jest'
             }
         }
         stage("Continuous Delivery / Livraison Continue") {
