@@ -2,6 +2,10 @@ Install dependencies and build the app for production
 ```
 npm install
 npm run build
+```
+
+If you want to start the project localy
+```
 npm run start
 ```
 
@@ -26,6 +30,15 @@ If your are on Windows, execute this command in Powershell or cmd
 ```
 cd Jenkins-agent
 docker build -t jenkins-agent-with-docker-and-node .
+```
+
+To get the Jenkins master IP adress
+```
+docker inspect jenkins
+```
+
+Link the jenkins agent
+```
 docker run --init --name jenkins_agent_node -v /var/run/docker.sock:/var/run/docker.sock jenkins-agent-with-docker-and-node -url http://<Jenkins_master_IP_adress>:8080 <secret> <agent_name>
 ```
 
