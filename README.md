@@ -1,3 +1,7 @@
+# Next_CICDCD
+
+
+## Deploy localy
 Install dependencies and build the app for production
 ```
 npm install
@@ -9,16 +13,21 @@ If you want to start the project localy
 npm run start
 ```
 
+## Deploy with Docker
+
+Install dependencies and build the app for production
+```
+npm install
+npm run build
+```
+
 Build the image and run as container
 ```
 docker build -t next_cicdcd .
 docker run --name next_cicdcd_container -p 3000:3000 next_cicdcd
 ```
 
-CICDCD in Docker environment
-
-Require :
-- Docker Engine instal
+## Deploy with Jenkins
 
 If not already done start an instance of jenkins_master
 ```
